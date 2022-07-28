@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -11,21 +20,19 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
           },
         },
       };
     </script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
-    />
-
     <title>Tech Expert</title>
   </head>
   <body>
     <header>
       <nav
-        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900"
+        class="bg-white border-gray-200 mb-8 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
       >
         <div
           class="container flex flex-wrap justify-between items-center mx-auto"
@@ -125,100 +132,46 @@
           </div>
         </div>
       </nav>
-
-      <div id="controls-carousel" class="relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-56 rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div
-            class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
-            data-carousel-item=""
-          >
-            <img
-              src="images/cover/cover-1.png"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="..."
-            />
+      <!-- slider  -->
+      <section class="container mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/cover/cover-1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
           </div>
-          <!-- Item 2 -->
-          <div
-            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
-            data-carousel-item="active"
-          >
-            <img
-              src="images/cover/cover-2.jpg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="..."
-            />
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/cover/cover-2.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
           </div>
-          <!-- Item 3 -->
-          <div
-            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
-            data-carousel-item=""
-          >
-            <img
-              src="images/cover/cover-3.jpg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="..."
-            />
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/cover/cover-3.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
         </div>
-        <!-- Slider controls -->
-        <button
-          type="button"
-          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-prev=""
-        >
-          <span
-            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              aria-hidden="true"
-              class="w-6 h-6 text-white dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-next=""
-        >
-          <span
-            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              aria-hidden="true"
-              class="w-6 h-6 text-white dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
+      </section>
     </header>
 
+
+
+
+
+
+    
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
   </body>
 </html>

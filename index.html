@@ -12,6 +12,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -29,11 +35,10 @@
     </script>
     <title>Tech Expert</title>
   </head>
-  <body class="bg-white">
+
+  <body class="bg-white lg:px-36">
     <header>
-      <nav
-        class="bg-white border-gray-200 mb-8 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
-      >
+      <nav class="bg-white border-gray-200 mb-8 px-2 sm:px-4 py-2.5">
         <div
           class="container flex flex-wrap justify-between items-center mx-auto"
         >
@@ -43,22 +48,21 @@
               class="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
             />
-            <span
-              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            <span class="self-center text-xl font-semibold whitespace-nowrap"
               >Tech Expert</span
             >
           </a>
           <div class="flex md:order-2">
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
             >
               Register
             </button>
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -83,12 +87,12 @@
             id="navbar-cta"
           >
             <ul
-              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
             >
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
                   aria-current="page"
                   >Home</a
                 >
@@ -96,35 +100,35 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded md:p-0"
                   >Courses</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded md:p-0"
                   >Deals</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded md:p-0"
                   >Success</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded md:p-0"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Register</a
                 >
               </li>
@@ -165,8 +169,8 @@
         </div>
       </section>
     </header>
-    <section class="container mx-auto text-center mt-6">
-      <div>
+    <section class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+      <div class="mb-4 md:mb-8 lg:mb-12">
         <h2 class="text-2xl text-black">Discover Our Popular Courses</h2>
         <p>
           It is a long established fact that a reader will be distracted by the
@@ -175,57 +179,363 @@
       </div>
       <div class="grid lg:grid-cols-2 lg:gap-4">
         <div class="flex items-center mt-4">
-          <img src="images/course/course-1.png" alt="">
+          <img src="images/course/course-1.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
         <div class="flex items-center mt-4">
-          <img src="images/course/course-2.png" alt="">
+          <img src="images/course/course-2.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
         <div class="flex items-center mt-4">
-          <img src="images/course/course-3.png" alt="">
+          <img src="images/course/course-3.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
         <div class="flex items-center mt-4">
-          <img src="images/course/course-4.png" alt="">
+          <img src="images/course/course-4.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
         <div class="flex items-center mt-4">
-          <img src="images/course/course-5.png" alt="">
+          <img src="images/course/course-5.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
         <div class="flex items-center mt-4">
-          <img src="images/course/course-6.png" alt="">
+          <img src="images/course/course-6.png" alt="" />
           <div class="text-left ml-4">
             <h3>Fundamental Of UI/UX Design</h3>
-            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
             <p>Price : 20$</p>
           </div>
         </div>
+      </div>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-lg lg:hidden">
+        View All
+      </button>
+    </section>
+    <section class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+      <div class="grid grid-cols-2">
+        <div>
+          <img src="images/working.png" alt="" />
+        </div>
+        <div class="ml-14 text-left">
+          <h3 class="text-5xl font-bold">Explore The elearning Institute</h3>
+          <p class="mt-2.5">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure. Anything embarrassing hidden in the middle of text.
+            All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined.
+          </p>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 my-8">
+            <div>
+              <h3 class="text-5xl font-bold">3.2K+</h3>
+              <p>Online Course</p>
+            </div>
+            <div>
+              <h3 class="text-5xl font-bold">600+</h3>
+              <p>Expert member</p>
+            </div>
+            <div>
+              <h3 class="text-5xl font-bold">1K+</h3>
+              <p>Rating & Review</p>
+            </div>
+          </div>
 
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-2.5">
+            Read More
+          </button>
+        </div>
       </div>
     </section>
+    <!-- register option  -->
+    <section class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+      <div class="flex justify-between items-center py-20 px-24 bg-blue-500">
+        <div class="text-left text-white">
+          <h4 class="text-5xl">Ready to join?</h4>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div>
+          <!-- The button to open modal -->
+          <label
+            for="my-modal-3"
+            class="btn modal-button bg-white text-blue-600 whitespace-nowrap"
+            >Register Now</label
+          >
+        </div>
+      </div>
+    </section>
+    <!-- top student -->
+    <section class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+      <div class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+        <div class="text-left">
+          <h3 class="text-5xl">Meet Our Successfull Students</h3>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="grid grid-cols-4">
+          <div class="text-left">
+            <img src="images/student/student-1.png" alt="" />
+            <h4>Awlad Hossain</h4>
+            <p>UIUX Designer</p>
+          </div>
+          <div class="text-left">
+            <img src="images/student/student-2.png" alt="" />
+            <h4>Jannatul Islam</h4>
+            <p>Motion Design</p>
+          </div>
+          <div class="text-left">
+            <img src="images/student/student-3.png" alt="" />
+            <h4>Imran Hossain</h4>
+            <p>Graphic Designer</p>
+          </div>
+          <div class="text-left">
+            <img src="images/student/student-4.png" alt="" />
+            <h4>Nishi Akter</h4>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-2.5">
+          View All
+        </button>
+      </div>
+      <div></div>
+    </section>
 
+    <!-- feedback -->
+    <section
+      class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28"
+    ></section>
+    <!-- FAQ  -->
+    <section class="container mx-auto text-center mt-8 md:mt-16 lg:mt-28">
+      <div class="text-center">
+        <h3 class="text-5xl font-bold">Frequently Asked Questions</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+        <div class="text-left">
+          <div id="accordion-collapse" data-accordion="collapse">
+            <h2 id="accordion-collapse-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl bg-gray-100 text-gray-900"
+                data-accordion-target="#accordion-collapse-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-collapse-body-1"
+              >
+                <span>Flex v/s Grid</span>
+                <svg
+                  data-accordion-icon=""
+                  class="w-6 h-6 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-1"
+              class=""
+              aria-labelledby="accordion-collapse-heading-1"
+            >
+              <div class="p-5 font-light border border-b-0 border-gray-200">
+                <p class="mb-2 text-gray-500">
+                  Grid and flexbox. The basic difference between CSS Grid Layout
+                  and CSS Flexbox Layout is that flexbox was designed for layout
+                  in one dimension - either a row or a column. Grid was designed
+                  for two-dimensional layout - rows, and columns at the same
+                  time.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200"
+                data-accordion-target="#accordion-collapse-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-2"
+              >
+                <span>Bootstrap v/s Tailwind CSS</span>
+                <svg
+                  data-accordion-icon=""
+                  class="w-6 h-6 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-2"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-2"
+            >
+              <div class="p-5 font-light border border-b-0 border-gray-200">
+                <p class="mb-2 text-gray-500">
+                  Bootstrap's utility and layout classes provide you with
+                  everything you need to style a responsive webpage. With
+                  Tailwind, however, you are much more involved in styling the
+                  webpage because you end up having to create your own
+                  components using the utility classes that the framework
+                  offers.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200"
+                data-accordion-target="#accordion-collapse-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-3"
+              >
+                <span>What is Box Model?</span>
+                <svg
+                  data-accordion-icon=""
+                  class="w-6 h-6 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-3"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-3"
+            >
+              <div class="p-5 font-light border border-t-0 border-gray-200">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  The CSS box model is essentially a box that wraps around every
+                  HTML element. It consists of: margins, borders, padding, and
+                  the actual content. The image below illustrates the box model:
+                </p>
+                <img src="images/box-model.png" alt="" />
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-4">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200"
+                data-accordion-target="#accordion-collapse-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-4"
+              >
+                <span>What is Semantic tag/element?</span>
+                <svg
+                  data-accordion-icon=""
+                  class="w-6 h-6 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-4"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-4"
+            >
+              <div class="p-5 font-light border border-t-0 border-gray-200">
+                <p class="mb-2 text-gray-500">
+                  Semantic HTML elements are those that clearly describe their
+                  meaning in a human- and machine-readable way. Elements such as
+                  <b class="font-bold">header , footer and article </b> are all
+                  considered semantic because they accurately describe the
+                  purpose of the element and the type of content that is inside
+                  them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modal popup -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label
+          for="my-modal-3"
+          class="btn btn-sm btn-circle absolute right-2 top-2"
+          >✕</label
+        >
+        <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+        <p class="py-4">
+          You've been selected for a chance to get one year of subscription to
+          use Wikipedia for free!
+        </p>
+      </div>
+    </div>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
   </body>
 </html>
